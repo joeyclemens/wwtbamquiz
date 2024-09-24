@@ -1,8 +1,8 @@
 const questions = [
     {
-        question: "In the context of our monthly CAT Meeting, what does 'CAT' stand for?" ,
-        options: ["Consultants and Trainers", "Consultants and Technicians", "Coordinators and Technicians", "Consultants and Team Leads"],
-        correctAnswer: 1
+        question: "What sort of animal is Walt Disney's Dumbo?" ,
+        options: ["Deer", "Rabbit", "Elephant", "Donkey"],
+        correctAnswer: 2
     },
     {
         question: "Which planet is known as the Red Planet?",
