@@ -19,11 +19,7 @@ const questions = [
         options: [" Lord of the Flies", "A Clockwork Orange", "The Jungle Book", "Brave New World"],
         correctAnswer: 0
     },
-    {
-        question: "The young of which creature is known as a squab?",
-        options: ["Salmon", "Horse", "Pigeon", "Octopus"],
-        correctAnswer: 2
-    },
+    
 
     {
         question: "In which town is the Royal Shakespeare Theatre Situated?",
@@ -38,7 +34,11 @@ const questions = [
         correctAnswer: 1
     }
     ,
-
+{
+        question: "The young of which creature is known as a squab?",
+        options: ["Salmon", "Horse", "Pigeon", "Octopus"],
+        correctAnswer: 2
+    },
 
     {
         question: "Which country is home to the ancient city of Petra?",
