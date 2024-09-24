@@ -168,10 +168,10 @@ function checkAnswer(selectedIndex) {
 
 function endGame(won) {
     const quizEl = document.querySelector('.quiz');
+    const prizeWon = won ? '£1,000,000' : prizeAmounts[Math.max(0, currentPrizeIndex - 1)];
     quizEl.innerHTML = `
         <h1>Game Over</h1>
-        <p>${won ? 'Congratulations! You won £1,000,000!' : `You won ${prizeAmounts[currentPrizeIndex]}`}</p>
-        
+        <p>${won ? 'Congratulations! You won £1,000,000!' : `You won ${prizeWon}`}</p>
     `;
 }
 
