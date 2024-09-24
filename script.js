@@ -15,13 +15,13 @@ const questions = [
         correctAnswer: 1
     },
     {
-        question: "What is the largest ocean on Earth?",
-        options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-        correctAnswer: 3
+        question: "A character named Ralph is elected leader of a group of boys at the beginning of which book?",
+        options: [" Lord of the Flies", "A Clockwork Orange", "The Jungle Book", "Brave New World"],
+        correctAnswer: 0
     },
     {
-        question: "Which element has the chemical symbol 'O'?",
-        options: ["Osmium", "Oganesson", "Oxygen", " 	Antimony"],
+        question: "The young of which creature is known as a squab?",
+        options: ["Salmon", "Horse", "Pigeon", "Octopus"],
         correctAnswer: 2
     },
 
