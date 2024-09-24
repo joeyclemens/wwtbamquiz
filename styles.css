@@ -4,10 +4,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Use min-height instead of height */
     margin: 0;
     background: linear-gradient(135deg, #000033, #50748A);
     color: #f2f2f2;
+    padding: 10px; /* Add padding to avoid cutting off */
 }
 
 /* Main Container */
@@ -44,6 +45,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
 }
+
 .prize-item:hover {
     background-color: #3333ff;
 }
@@ -78,6 +80,7 @@ body {
     text-align: center;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 .option:hover {
     background-color: #3333ff;
     transform: translateY(-2px);
@@ -87,6 +90,7 @@ body {
 .correct {
     background-color: #00CC00;
 }
+
 .incorrect {
     background-color: #CC0000;
 }
@@ -102,11 +106,61 @@ body {
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 .lifeline:hover {
     background-color: #FFAA33;
     transform: translateY(-2px);
 }
+
 .lifeline:disabled {
     background-color: #666666;
     cursor: not-allowed;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    /* Overall Body Styling */
+    body {
+        padding: 20px; /* Ensure some space around the content */
+        overflow: auto; /* Allow scrolling if necessary */
+    }
+
+    /* Main Container */
+    .container {
+        flex-direction: column; /* Stack sections vertically */
+        width: 95%; /* Adjust width for mobile */
+    }
+
+    /* Quiz Section */
+    .quiz {
+        border-right: none; /* Remove border for mobile */
+        border-bottom: 2px solid #7C99AD; /* Add bottom border instead */
+    }
+
+    /* Prize List Section */
+    .prize-list {
+        padding: 15px; /* Adjust padding */
+    }
+
+    /* Question Styling */
+    .question {
+        font-size: 20px; /* Slightly smaller font size */
+    }
+
+    /* Options Layout */
+    .options {
+        grid-template-columns: 1fr; /* Stack options vertically */
+    }
+
+    /* Option Styling */
+    .option {
+        padding: 12px; /* Adjust padding for smaller screens */
+        font-size: 16px; /* Adjust font size for options */
+    }
+
+    /* Lifeline Button Styling */
+    .lifeline {
+        width: 100%; /* Make lifeline button full width */
+        padding: 10px; /* Adjust padding */
+    }
 }
